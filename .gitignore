@@ -1,0 +1,21 @@
+# Flutter
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.idea/
+*.iml
+
+# Android
+*.apk
+*.aab
+
+# iOS
+Pods/
+DerivedData/
+
+# VS Code
+.vscode/
+
+# macOS
+*.DS_Store
