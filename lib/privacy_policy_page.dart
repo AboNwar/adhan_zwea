@@ -33,28 +33,30 @@ class PrivacyPolicyPage extends StatelessWidget {
               SizedBox(height: 16),
               Text('1) البيانات التي نجمعها', style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 6),
-              Text(
-                '- لا نقوم بجمع أو تخزين أي بيانات شخصية حساسة عنك.
+              Text('''
+- لا نقوم بجمع أو تخزين أي بيانات شخصية حساسة عنك.
 - لا نقوم بإنشاء حسابات أو تتبّع المستخدمين.
-- لا نشارك أي بيانات مع أطراف خارجية لأغراض التسويق.',
-              ),
+- لا نشارك أي بيانات مع أطراف خارجية لأغراض التسويق.
+'''),
               SizedBox(height: 16),
               Text('2) البيانات المخزنة محليًا على جهازك', style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 6),
-              Text(
-                '- إعدادات الإشعارات (تشغيل/تعطيل).
+              Text('''
+- إعدادات الإشعارات (تشغيل/تعطيل).
 - تفضيل تشغيل صوت الأذان عند وقت الصلاة.
-- تعويض التاريخ الهجري (إن تم تغييره).\n\nهذه البيانات تبقى محليًا على جهازك عبر SharedPreferences، ويمكنك حذفها بإزالة التطبيق أو مسح بياناته.',
-              ),
+- تعويض التاريخ الهجري (إن تم تغييره).
+
+هذه البيانات تبقى محليًا على جهازك عبر SharedPreferences، ويمكنك حذفها بإزالة التطبيق أو مسح بياناته.
+'''),
               SizedBox(height: 16),
               Text('3) الأذونات المستخدمة ولماذا', style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 6),
-              Text(
-                '- POST_NOTIFICATIONS: لإظهار الإشعارات.
+              Text('''
+- POST_NOTIFICATIONS: لإظهار الإشعارات.
 - SCHEDULE_EXACT_ALARM (أندرويد): لجدولة الأذان في وقت دقيق.
 - VIBRATE و WAKE_LOCK و USE_FULL_SCREEN_INTENT (أندرويد): لتحسين موثوقية الإشعار والصوت.
-- لا نستخدم الموقع أو جهات الاتصال أو الميكروفون أو الكاميرا.',
-              ),
+- لا نستخدم الموقع أو جهات الاتصال أو الميكروفون أو الكاميرا.
+'''),
               SizedBox(height: 16),
               Text('4) خدمات وأطراف خارجية', style: TextStyle(fontWeight: FontWeight.bold)),
               SizedBox(height: 6),
