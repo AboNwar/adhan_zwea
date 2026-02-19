@@ -31,9 +31,9 @@ class PrayerService {
       final h = headers[i].toLowerCase();
       String? key;
 
-      if (h.contains('فجر') || h.contains('fajr'))
+      if (h.contains('فجر') || h.contains('fajr')) {
         key = 'الفجر';
-      else if (h.contains('شروق') || h.contains('sunrise'))
+      } else if (h.contains('شروق') || h.contains('sunrise'))
         key = 'الشروق';
       else if (h.contains('ظهر') || h.contains('duhr') || h.contains('dhuhr'))
         key = 'الظهر';
