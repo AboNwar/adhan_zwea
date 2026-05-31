@@ -243,7 +243,6 @@ class _PrayerTimesScreenState extends State<PrayerTimesScreen> {
   Future<void> _loadPrayerTimes() async {
     setState(() {
       errorMessage = '';
-      prayerTimes.clear();
     });
 
     final monthFile = _now.month; // 1..12

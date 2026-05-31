@@ -1,0 +1,30 @@
+============================================
+  استخدم أحد الأمرين التاليين — لا تكتب "flutter" وحده
+============================================
+
+■ الطريقة 1 (الأبسط): تشغيل الملف .bat
+   من PowerShell وأنت في مجلد المشروع (C:\src\dev\adhan_zwea) اكتب:
+
+   .\scripts\flutter_here.bat
+
+   هذا يشغّل تلقائياً: flutter clean ثم flutter pub get
+
+
+■ الطريقة 2: تفعيل Flutter في PowerShell ثم استخدامه
+   انسخ السطر التالي والصقه في PowerShell ثم Enter:
+
+   $env:Path = "C:\src\dev\flutter\bin;" + $env:Path
+
+   بعدها يمكنك كتابة أي أمر flutter في نفس النافذة، مثلاً:
+
+   flutter clean
+   flutter pub get
+   flutter run
+
+============================================
+للتحقق من وجود PowerShell (من داخل PowerShell):
+   Test-Path "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
+لو ظهر True فـ PowerShell موجود والـ .bat يفترض أن يعمل.
+============================================
+ملاحظة: إذا كتبت "flutter clean" بدون تشغيل أحد الأمرين أعلاه أولاً، سيبقى الخطأ "flutter is not recognized".
+============================================
