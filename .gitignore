@@ -1,3 +1,8 @@
+# Signing keys / secrets (NEVER commit)
+*.jks
+*.keystore
+key.properties
+
 # Miscellaneous
 *.class
 *.log
@@ -22,6 +27,9 @@ migrate_working_dir/
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
 #.vscode/
+
+# Flutter SDK cloned by Vercel during build
+/_flutter/
 
 # Flutter/Dart/Pub related
 **/doc/api/

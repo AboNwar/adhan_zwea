@@ -12,9 +12,13 @@ dependencies:
   intl: ^0.18.0
   hijri: ^3.0.0
   flutter_local_notifications: ^17.2.3
+  flutter_timezone: ^5.0.1
+  sound_mode: ^3.1.1
   timezone: ^0.9.4
   shared_preferences: ^2.3.2
   url_launcher: ^6.3.0
+  flutter_background_service: ^5.1.0
+  flutter_background_service_android: ^6.3.1
 
 dev_dependencies:
   flutter_launcher_icons: ^0.10.0 
@@ -34,6 +38,5 @@ flutter:
   assets:
     - assets/prayers/
     - assets/images/
-    - assets/adhan.mp3
     - assets/privacy.html
     

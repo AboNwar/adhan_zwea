@@ -1,11 +1,12 @@
 {
-    "name": "adhan_zwea",
-    "short_name": "adhan_zwea",
+    "name": "تطبيق أوقات الصلاة - الزاوية",
+    "short_name": "الزوية",
     "start_url": ".",
+    "scope": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FFFFFF",
+    "theme_color": "#009688",
+    "description": "تطبيق أوقات الصلاة - الزوية",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
