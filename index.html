@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <base href="/adhan_zwea/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="أوقات الصلاة - الزوية (يعمل دون إنترنت بعد التثبيت)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#00897B">
+
+  <!-- iPhone / iPad: إضافة إلى الشاشة الرئيسية -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="أذان الزوية">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>أذان الزوية</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #00897B;
+    }
+    .loading {
+      color: #fff;
+      font-family: Tahoma, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      direction: rtl;
+    }
+  </style>
+</head>
+<body>
+  <div class="loading" id="loading">جاري تحميل أذان الزوية…</div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var el = document.getElementById('loading');
+      if (el) el.remove();
+    });
+    // إذا تعثر التحميل أظهر رسالة واضحة
+    setTimeout(function () {
+      var el = document.getElementById('loading');
+      if (el) {
+        el.innerHTML = 'تعذّر التحميل. افتح الرابط في Chrome أو Safari<br><small>ثم أعد المحاولة</small>';
+      }
+    }, 20000);
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
