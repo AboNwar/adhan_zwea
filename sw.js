@@ -1,5 +1,5 @@
 /* Service Worker لنسخة الويب: تخزين التطبيق والمواقيت للعمل دون إنترنت بعد أول زيارة */
-const CACHE_NAME = 'adhan-zwea-offline-v2';
+const CACHE_NAME = 'adhan-zwea-offline-v3';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
